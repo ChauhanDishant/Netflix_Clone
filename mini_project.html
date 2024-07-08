@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+        theme: {
+            screens: { // default screens
+            'sm': '567px',
+            // => @media (min-width: 576px) { ... }
+            
+            'md': '960px',
+            // => @media (min-width: 960px) { ... }
+                    
+            'lg': '1440px',
+            // => @media (min-width: 1440px) { ... }
+            },
+            extend: {
+                screens:{
+                    'xs':{'min':'320px','max':'567px'}, // customised screens
+                }, 
+                colors: {
+                    'wscolor': '#2699fb',
+                },
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Using Flex box property -->
+     <!-- Note:- w-full class is used to cover entire area for the image. -->
+    <div class="max-w-[1320px] md:py-[80] py-5 flex mx-auto flex md:flex-row sm:flex-col xs:flex-col gap-4">
+        <div class="basis-[45%] pb-5">
+            <img src="https://t4.ftcdn.net/jpg/05/83/23/95/360_F_583239500_sShYZO8tFKzw7A1u7Hkg5sbvphq0gPYE.jpg" class="w-full"/>
+        </div>
+        <div class="basis-[55%]">
+            <h1 class="pb-5 text-center lg:text-4xl md:text-3xl sm:text-xl
+            xs:text-lg">WsCube Tech: India's Most-Trusted IT Training Institute.</h1>
+            <p class="text-center py-3 sm:text-md px-[4px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem suscipit ex ad ipsum doloremque consectetur ratione fugiat deserunt corporis soluta voluptate quisquam dignissimos, ut facere sunt libero quia ipsam. Nam.</p>
+            <p class="text-center py-3 sm:text-md px-[4px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem suscipit ex ad ipsum doloremque consectetur ratione fugiat deserunt corporis soluta voluptate quisquam dignissimos, ut facere sunt libero quia ipsam. Nam.</p>
+            <p class="text-center py-3 sm:text-md px-[4px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem suscipit ex ad ipsum doloremque consectetur ratione fugiat deserunt corporis soluta voluptate quisquam dignissimos, ut facere sunt libero quia ipsam. Nam.</p>
+        </div>
+    </div>
+
+
+    <!-- Using Grid property -->
+    <div class="max-w-[1320px] mx-auto">
+        <h1 class="text-4xl text-center py-5">Featured Products</h1>
+    </div>
+    <div class="max-w-[1320px] mx-auto grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-5 px-[20px]">
+        <div class="text-center shadow-lg rounded">
+            <div class="overflow-hidden">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/wallpaper/d/b/y/122-92-1-poster-no-326-hd-print-house-original-imagmt4n7cy6z7rh.jpeg?q=20&crop=false" alt="image"
+                class="hover:scale-125 duration-1000">
+            </div>
+            <h3 class="lg:py-2 text-2xl md:py-2 text-2xl sm:py-1 text-1xl">Maurya delicate necklace</h3>
+            <p class="py-2">Rs. 3000</p>
+        </div>
+        <div class="text-center shadow-lg rounded">
+            <div class="overflow-hidden">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/wallpaper/d/b/y/122-92-1-poster-no-326-hd-print-house-original-imagmt4n7cy6z7rh.jpeg?q=20&crop=false" alt="image"
+                class="hover:scale-125 duration-1000">
+            </div>
+            <h3 class="lg:py-2 text-2xl md:py-2 text-2xl sm:py-1 text-1xl">Maurya delicate necklace</h3>
+            <p class="py-2">Rs. 3000</p>
+        </div>
+        <div class="text-center shadow-lg rounded">
+            <div class="overflow-hidden">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/wallpaper/d/b/y/122-92-1-poster-no-326-hd-print-house-original-imagmt4n7cy6z7rh.jpeg?q=20&crop=false" alt="image"
+                class="hover:scale-125 duration-1000">
+            </div>
+            <h3 class="lg:py-2 text-2xl md:py-2 text-2xl sm:py-1 text-1xl">Maurya delicate necklace</h3>
+            <p class="py-2">Rs. 3000</p>
+        </div>
+        <div class="text-center shadow-lg rounded">
+            <div class="overflow-hidden">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/wallpaper/d/b/y/122-92-1-poster-no-326-hd-print-house-original-imagmt4n7cy6z7rh.jpeg?q=20&crop=false" alt="image"
+                class="hover:scale-125 duration-1000">
+            </div>
+            <h3 class="lg:py-2 text-2xl md:py-2 text-2xl sm:py-1 text-1xl ">Maurya delicate necklace</h3>
+            <p class="py-2">Rs. 3000</p>
+        </div>
+    </div>
+
+    <div class="max-w-[1320px] md:py-5 sm:py-7 xs:py-8 mx-auto">
+        <h1 class="text-4xl text-center">Our Services</h1>
+    </div>
+    <div class="max-w-[1200px] md:py-[30px] mx-auto grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2  gap-6">
+        <!-- group is used for the parent and child components - IT is specially used for the hover effect.-->
+        <div class="group shadow-lg p-4 text-center hover:bg-blue-500 rounded-[10px] hover:text-white duration 1000">
+            <i class="fas fa-laptop-code text-2xl text-blue-500 animate-bounce group-hover:text-white duration-1000 "></i>
+            <h3 class="text-xl">Web Design</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet minima ipsa consequatur laudantium, provident quisquam qui obcaecati doloribus consectetur.</p>
+        </div>
+        <div class="group shadow-lg p-4 text-center hover:bg-blue-500 rounded-[10px] hover:text-white duration 1000">
+            <i class="fas fa-laptop-code text-2xl text-blue-500 animate-bounce group-hover:text-white duration-1000"></i>
+            <h3 class="text-xl">Web Design</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet minima ipsa consequatur laudantium, provident quisquam qui obcaecati doloribus consectetur.</p>
+        </div>
+        <div class="group shadow-lg p-4 text-center hover:bg-blue-500 rounded-[10px] hover:text-white duration 1000">
+            <i class="fas fa-laptop-code text-2xl text-blue-500 animate-bounce group-hover:text-white duration-1000"></i>
+            <h3 class="text-xl">Web Design</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet minima ipsa consequatur laudantium, provident quisquam qui obcaecati doloribus consectetur.</p>
+        </div>
+        <div class="group shadow-lg p-4 text-center hover:bg-blue-500 rounded-[10px] hover:text-white duration 1000">
+            <i class="fas fa-laptop-code text-2xl text-blue-500 animate-bounce group-hover:text-white duration-1000"></i>
+            <h3 class="text-xl">Web Design</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet minima ipsa consequatur laudantium, provident quisquam qui obcaecati doloribus consectetur.</p>
+        </div>
+        <div class="group shadow-lg p-4 text-center hover:bg-blue-500 rounded-[10px] hover:text-white duration 1000">
+            <i class="fas fa-laptop-code text-2xl text-blue-500 animate-bounce group-hover:text-white duration-1000"></i>
+            <h3 class="text-xl">Web Design</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet minima ipsa consequatur laudantium, provident quisquam qui obcaecati doloribus consectetur.</p>
+        </div>
+        <div class="group shadow-lg p-4 text-center hover:bg-blue-500 rounded-[10px] hover:text-white duration 1000">
+            <i class="fas fa-laptop-code text-2xl text-blue-500 animate-bounce group-hover:text-white duration-1000"></i>
+            <h3 class="text-xl">Web Design</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet minima ipsa consequatur laudantium, provident quisquam qui obcaecati doloribus consectetur.</p>
+        </div>
+        <div class="group shadow-lg p-4 text-center hover:bg-blue-500 rounded-[10px] hover:text-white duration 1000">
+            <i class="fas fa-laptop-code text-2xl text-blue-500 animate-bounce group-hover:text-white duration-1000"></i>
+            <h3 class="text-xl">Web Design</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet minima ipsa consequatur laudantium, provident quisquam qui obcaecati doloribus consectetur.</p>
+        </div>
+        <div class="group shadow-lg p-4 text-center hover:bg-blue-500 rounded-[10px] hover:text-white duration 1000">
+            <i class="fas fa-laptop-code text-2xl text-blue-500 animate-bounce group-hover:text-white duration-1000"></i>
+            <h3 class="text-xl">Web Design</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet minima ipsa consequatur laudantium, provident quisquam qui obcaecati doloribus consectetur.</p>
+        </div>
+    </div>
+</body>
+</html>

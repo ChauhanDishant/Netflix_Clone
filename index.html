@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            screens: { // default screens
+            'sm': '567px',
+            // => @media (min-width: 576px) { ... }
+            
+            'md': '960px',
+            // => @media (min-width: 960px) { ... }
+                    
+            'lg': '1440px',
+            // => @media (min-width: 1440px) { ... }
+            },
+            extend: {
+                screens:{
+                    'xs':{'min':'320px','max':'567px'}, // customised screens
+                }, 
+                colors: {
+                    'wscolor': '#2699fb',
+                },
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- <div class="container bg-black-800">
+        <h1 class="lg:text-center md:text-center sm:text-center xs:text-center text-3xl text-wscolor font-bold">
+            Hello world!
+        </h1>
+        <h2 class="lg:text-center md:text-center sm:text-center xs:text-center text-3xl text-[#78dcca] font-bold">
+            This is a tailwind project
+        </h2>
+    </div> --> 
+    <!-- mx-auto property is used to center the width. -->
+    
+    <!-- Grid -->
+
+    <!-- Column Spanning -->
+    <div class="max-w-[1200px] py-5 text-white mx-auto grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-2 gap-5">
+         <div class="bg-[green] py-5 text-center">Hello this is IT text and I have developed this website using the tailwind css.</div>
+         <div class="bg-[green] py-5 text-center">Hello this is IT text and I have developed this website using the tailwind css.</div>
+         <div class="bg-[green] py-5 text-center">Hello this is IT text and I have developed this website using the tailwind css.</div>
+         <div class="bg-[green] py-5 text-center">Hello this is IT text and I have developed this website using the tailwind css.</div>
+         <div class="bg-[green] py-5 text-center">Hello this is IT text and I have developed this website using the tailwind css.</div>
+         <div class="bg-[green] py-5 text-center">Hello this is IT text and I have developed this website using the tailwind css.</div>
+         <div class="bg-[green] py-5 text-center">Hello this is IT text and I have developed this website using the tailwind css.</div>
+         <div class="bg-[green] py-5 text-center">Hello this is IT text and I have developed this website using the tailwind css.</div>
+    </div>
+
+    <h2 class="text-red-900 text-center py-5 text-2xl">Row Spanning</h2>
+    <!-- Row Spanning -->
+    <div class="max-w-[1320px] grid text-white grid-rows-4 grid-flow-col mx-auto gap-5">
+        <div class="bg-[green] py-5 text-center row-span-2">Hello this is IT text and I have developed this website using the tailwind css.</div>
+        <div class="bg-[green] py-5 text-center">Hello this is IT text and I have developed this website using the tailwind css.</div>
+        <div class="bg-[green] py-5 text-center">Hello this is IT text and I have developed this website using the tailwind css.</div>
+        <div class="bg-[green] py-5 text-center row-start-2 row-end-4">Hello this is IT text and I have developed this website using the tailwind css.</div>
+        <div class="bg-[green] py-5 text-center">Hello this is IT text and I have developed this website using the tailwind css.</div>
+        <div class="bg-[green] py-5 text-center">Hello this is IT text and I have developed this website using the tailwind css.</div>
+        <div class="bg-[green] py-5 text-center">Hello this is IT text and I have developed this website using the tailwind css.</div>
+        <div class="bg-[green] py-5 text-center">Hello this is IT text and I have developed this website using the tailwind css.</div>
+   </div>
+
+   <!-- Padding classes -->
+
+   <!-- 1. padding top = pt, 2. padding bottom = pb, 3. padding left = pl, 4. padding right = pr, 
+        5. padding y-axis(top,bottom) = py, 6. padding x-axis(left,right) = px-->
+
+    <div class="max-w-[1200px] mx-auto hover:py-8 bg-wscolor text-white md:p-[20px] text-3xl text-center">
+        <h1>Welcome to the Jungle</h1>
+    </div>
+
+    <!-- Margin classes -->
+
+   <!-- 1. Margin top = mt, 2. Margin bottom = mb, 3. Margin left = ml, 4. Margin right = mr, 
+        5. Margin y-axis(top,bottom) = my, 6. Margin x-axis(left,right) = mx-->
+
+    <div class="max-w-[1200px] mx-auto bg-red-700 text-white mt-[20px] text-3xl text-center">
+        <h1>Hello Guys</h1>
+    </div>
+</body>
+</html>
